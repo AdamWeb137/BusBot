@@ -1,0 +1,50 @@
+:root {
+    --back: rgb(253, 203, 183);
+    --col: rgb(143, 28, 8);
+}
+
+html {
+    height: 50%;
+}
+
+body {
+    background-color: var(--back);
+    color:var(--col);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+
+h1#word, p#info {
+    text-align: center;
+}
+
+#content {
+    max-width: 80%;
+    border:5px solid var(--col);
+    border-radius: 25px;
+    padding:30px;
+}
+
+button#new_game {
+    display: block;
+    margin-top: 5px;
+    width:100%;
+}
+
+div#inp_row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+div#inp_row > * {
+    display: block; 
+}
+
+input[name='letter']{
+    width: auto;
+    margin:0px 5px 0px 0px;
+}
