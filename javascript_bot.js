@@ -98,7 +98,7 @@ const main = ()=>{
         const btn = document.querySelector("button[name='add']");
         btn.addEventListener("click",(ev)=>{
             if(!game_on) return;
-            let l = inp.value;
+            let l = inp.value.toLowerCase();
             let alphabet = "abcdefghijklmnopqrstuvwxyz";
             if(l.length == 0){
                 alert("Please enter a letter");
